@@ -2,15 +2,12 @@ import React, { useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import ThreeModel from "./ThreeModal";
-
 function Footer() {
   const controls = useRef();
   const [zoom, setZoom] = useState(5);
-
   const handleScroll = (event) => {
     setZoom((prevZoom) => prevZoom - event.deltaY * 0.005);
   };
-
   return (
     <footer
       className="font-semibold text-5xl text-amber-500 flex justify-center items-center h-screen"

@@ -75,11 +75,10 @@ function ScrollSection() {
       pin.kill();
     };
   }, [sectionRefs]);
-
   return (
     <section className="scroll-section-outer">
       <div ref={triggerRef}>
-        <div className="scroll-section-inner h-[100vh] w-[500vw]">
+        <div className="scroll-section-inner h-[100vh] w-[450vw]">
           {sectionRefs.map((sectionRef, sectionIndex) => (
             <div
               key={sectionIndex}
